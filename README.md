@@ -20,5 +20,4 @@ The goal of this project was to practice **Sass (SCSS)**, **responsive web desig
 - CSS Flexbox
 - Responsive Web Design (RWD)
 
-## Notes
-This repository represents a **course assignment** and serves as a learning and practice project.
+
