@@ -1,0 +1,28 @@
+.task-05 {
+  height: 100vh;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    img {
+      width: 200px;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 600px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "sass",
+  "version": "2.0.0",
+  "source": "01_Dzien_1/01_Podstawy/01_Pierwsze_kroki_z_SCSS/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0"
+  }
+}

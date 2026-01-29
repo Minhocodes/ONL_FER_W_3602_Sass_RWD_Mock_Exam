@@ -1,0 +1,33 @@
+@mixin arrow($color, $direction, $size) {
+  width: $size;
+  height: 0;
+  border-bottom: $size solid $color;
+  border-left: $size / 2 solid transparent;
+  border-right: $size / 2 solid transparent;
+
+  @if $direction == bottom {
+    transform: rotate(180deg);
+  } @else if $direction == left {
+    transform: rotate(270deg);
+  } @else if $direction == right {
+    transform: rotate(90deg);
+  }
+}
+
+.arrow-test {
+  &-blue-top-20px {
+    @include arrow(blue, top, 20px);
+  }
+
+  &-red-left-25px {
+    @include arrow(red, left, 25px);
+  }
+
+  &-green-right-60px {
+    @include arrow(green, right, 60px);
+  }
+
+  &-orange-bottom-100px {
+    @include arrow(orange, bottom, 100px);
+  }
+}

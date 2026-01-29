@@ -1,0 +1,6 @@
+exercises:
+    '1_Task 1': { max_points: 0, disabled: true, translations: { en: '1_Task 1' } }
+    '2_Task 2': { max_points: 0, disabled: true, translations: { en: '2_Task 2' } }
+    '3_Task 3': { max_points: 0, disabled: true, translations: { en: '3_Task 3' } }
+    '4_Task 4': { max_points: 0, disabled: true, translations: { en: '4_Task 4' } }
+    '5_Task 5': { max_points: 0, disabled: true, translations: { en: '5_Task 5' } }

@@ -1,0 +1,56 @@
+@use 'sass:map';
+@use 'sass:color';
+
+$columns: 10;
+$column-base-width: 100% / $columns;
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+
+    [class*=col-] {
+      min-height: 1px;
+      width: $column-base-width;
+      padding: 12px;
+    }
+
+    @for $i from 1 through $columns {
+      .col-#{$i} {
+        width: $column-base-width * $i;
+      }
+    }
+  }
+}
+
+
+.logo {
+  background-color: map.get($colors, red);
+}
+
+.navigation {
+  background-color: color.scale(map.get($colors, red), $lightness: 30%);
+}
+
+.slider {
+  background-color: map.get($colors, blue);
+  height: 200px;
+}
+
+.box {
+  background-color: map.get($colors, gold);
+  height: 80px;
+}
+
+.copyright {
+  background-color: color.scale(map.get($colors, green), $lightness: -30%);
+}
+
+.menu {
+  background-color: map.get($colors, green);
+}
